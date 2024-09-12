@@ -4,34 +4,26 @@ public class dasprojobsheet3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String nama, nim;
-        char kelas;
-        byte absen;
-        double nilaiKuis, nilaiTugas, nilaiUas, nilaiUts, nilaiAkhir;
+        boolean keanggotaan;
+        int jmlKopi, jmlTeh, jmlRoti;
+        double hargaKopi = 12000.0, hargaTeh = 7000.0, hargaRoti = 20000.0;
+        float diskon = 10 / 100f;
 
-        System.out.print("Masukkan nama: ");
-        nama = sc.nextLine();
-        System.out.print("Masukkan NIM: ");
-        nim = sc.nextLine();
-        System.out.print("Masukkan kelas: ");
-        kelas = sc.nextLine().charAt(0);
-        System.out.print("Masukkan nomor absen: ");
-        absen =sc.nextByte();
+        System.out.print("Masukkan keanggotaan (true/false): ");
+        keanggotaan = sc.nextBoolean();
+        System.out.print("Masukkan jumlah pembelian kopi: ");
+        jmlKopi = sc.nextInt();
+        System.out.print("Masukkan jumlah pembelian teh: ");
+        jmlTeh = sc.nextInt();
+        System.out.print("Masukkan jumlah pembelian roti: ");
+        jmlRoti = sc.nextInt();
 
-        System.out.print("Masukkan nilai kuis: ");
-        nilaiKuis = sc.nextDouble();
-        System.out.print("Masukkan nilai tugas: ");
-        nilaiTugas = sc.nextDouble();
-        System.out.print("Masukkan nilai uts: ");
-        nilaiUts = sc.nextDouble();
-        System.out.print("Masukkan nilai uas: ");
-        nilaiUas = sc.nextDouble();
+        double totalHarga = (jmlKopi * hargaKopi + jmlTeh * hargaTeh + jmlRoti * hargaRoti);
 
-        nilaiAkhir = (nilaiKuis * 0,20 + nilaiTugas*0,15 + nilaiUts*0,30 + nilaiUas*0,35);
+        double nominalBayar = totalHarga - (diskon * totalHarga);
 
-        System.out.println("Nama : " + nama + "NIM :" + nim);
-        System.out.println("Kelas: " + kelas + "Absen: " + absen);
-        System.out.println("Nilai Akhir: " + nilaiAkhir);
-
-    } 
+        System.out.println("Keanggotaan pelanggaan" + keanggotaan);
+        System.out.println("Item pembelian " + jmlKopi + "kopi," + jmlTeh + "teh," + jmlRoti + "roti,");
+        System.out.println("Nominal bayar rp: " + nominalBayar);
+    }
 }

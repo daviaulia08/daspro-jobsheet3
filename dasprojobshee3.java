@@ -27,7 +27,7 @@ public class dasprojobsheet3 {
         System.out.print("Masukkan nilai uas: ");
         nilaiUas = sc.nextDouble();
 
-        nilaiAkhir = (nilaiKuis * 0,20 + nilaiTugas*0,15 + nilaiUts*0,30 + nilaiUas*0,35);
+        double nilaiAkhir = (nilaiKuis * 20 + nilaiTugas * 15 + nilaiUts * 30 + nilaiUas * 35) / 100;
 
         System.out.println("Nama : " + nama + "NIM :" + nim);
         System.out.println("Kelas: " + kelas + "Absen: " + absen);
