@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class dasprojobsheet3 {
+public class dasprojobshee3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -27,7 +27,7 @@ public class dasprojobsheet3 {
         System.out.print("Masukkan nilai uas: ");
         nilaiUas = sc.nextDouble();
 
-        double nilaiAkhir = (nilaiKuis * 20 + nilaiTugas * 15 + nilaiUts * 30 + nilaiUas * 35) / 100;
+        nilaiAkhir = (nilaiKuis * 20 + nilaiTugas * 15 + nilaiUts * 30 + nilaiUas * 35) / 100;
 
         System.out.println("Nama : " + nama + "NIM :" + nim);
         System.out.println("Kelas: " + kelas + "Absen: " + absen);
