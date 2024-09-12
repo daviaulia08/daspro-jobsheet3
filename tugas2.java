@@ -16,7 +16,7 @@ public class tugas2 {
         double gajiStlhPajak = (gajiSblmPajak * 95)/100;
 
         System.out.println("Total Gaji : " + totalGaji);
-        System.out.println("Gaji Sebelum Pajak : " + gajiSblmPajak);
+        System.out.println("Gaji Setelah bonus : " + gajiSblmPajak);
         System.out.println("Gaji Setelah Pajak : " + gajiStlhPajak);
 
     }

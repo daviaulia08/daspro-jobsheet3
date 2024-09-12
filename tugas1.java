@@ -1,17 +1,3 @@
-// import java.util.Scanner;
-
-// public class tugas1 {
-//     public static void main (String[] args) {
-//         Scanner sc = new Scanner(System.in);
-
-//         double batasTarif = 1500
-//         int kwh;
-//         boolean batasMaksimal;
-
-//         System.out.print("Masukkan keanggotaan (true/false): ");
-//         kwh = sc.nextInt();
-//     }
-// }
 import java.util.Scanner;
 
 public class tugas1 {
